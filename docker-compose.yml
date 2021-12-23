@@ -1,0 +1,62 @@
+version: "3.3"  # optional since v1.27.0
+services:
+ 
+  nginx:
+    build: nginx/
+    ports:
+       - "80:80"
+    networks:
+      internal_routes:
+        aliases:
+          - nginx
+ 
+
+  mongodb:
+    container_name: mongodb
+    image: mongo:4.2
+    ports:
+      - "27017:27017"
+    restart: always 
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: admin
+      MONGO_INITDB_ROOT_PASSWORD: 123456   
+    networks:
+      internal_routes:
+        aliases:
+          - mongo
+
+
+
+  data_list:
+    build: data_list/
+    volumes: 
+       - ./data_list/:/app
+    expose:
+       - 5001
+    networks:
+      internal_routes:
+        aliases:
+          - data_list
+   
+  location_list:
+    build: location_list/
+    volumes: 
+       - ./location_list/:/app
+    expose:
+       - 5001
+    networks:
+      internal_routes:
+        aliases:
+          - location_list
+  pulse_list:
+    build: pulse_list/
+    volumes:
+      - ./pulse_list/:/app
+    expose:
+      - 5001
+    networks:
+      internal_routes:
+        aliases:
+          - pulse_list 
+networks:
+  internal_routes:      
