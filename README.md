@@ -5,5 +5,6 @@ The Drip_architecture_diagram.<br/>
 
 ---
 The drip device data in db.
-![image](ReadmeImage/data1.PNG)
-![image](ReadmeImage/data2.PNG)
+<img src="ReadmeImage/data1.PNG" width="700" height="300" alt="0"/>
+<img src="ReadmeImage/data2.PNG" width="700" height="300" alt="0"/>
+
