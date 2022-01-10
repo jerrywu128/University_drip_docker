@@ -1,7 +1,7 @@
 # University_drip_docker
 
-The Drip_architecture_diagram.
-<img src="ReadmeImage/Drip_architecture_diagram.png" width="700" height="300" alt="0"/><br/>
+The Drip_architecture_diagram.<br/>
+<img src="ReadmeImage/Drip_architecture_diagram.png" width="700" height="300" alt="0"/>
 
 ---
 The drip device data in db.
