@@ -4,7 +4,7 @@ The Drip_architecture_diagram.<br/>
 <img src="ReadmeImage/Drip_architecture_diagram.png" width="700" height="300" alt="0"/>
 
 ---
-The drip device data in db.
+The drip device data in db.<br/>
 <img src="ReadmeImage/data1.PNG" width="700" height="400" alt="0"/>
 <img src="ReadmeImage/data2.PNG" width="700" height="400" alt="0"/>
 
